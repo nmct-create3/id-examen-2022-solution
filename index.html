@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Opdracht Examen - Interaction design &amp; datavisualisatie</title>
+    <meta name="description" content="This is my HTML5 boilerplate.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+
+<body>
+    <form class="card" action="#">
+        <div class="card__header">
+            <h2>
+                Payment
+            </h2>
+            <div class="toggle" data-items="2">
+                <input class="o-hide-accessible toggle__input" type="radio" name="toggle" id="creditcard" checked>
+                <label data-label="Credit Card" class="toggle__button" for="creditcard">Credit
+                    card</label>
+                <input class="o-hide-accessible toggle__input" type="radio" name="toggle" id="paypal">
+                <label class="toggle__button" for="paypal">paypal</label>
+                <!-- <input class="o-hide-accessible toggle__input" type="radio" name="toggle" id="test">
+                <label class="toggle__button" for="test">test</label> -->
+            </div>
+        </div>
+        <div class="card__body">
+            <h3>
+                Card Details
+            </h3>
+            <p>
+                <label>
+                    Cardholder name
+                </label>
+                <input type="text">
+            </p>
+            <p>
+                <label>
+                    Card number
+                </label>
+                <input class="input--mc" type="text">
+            </p>
+            <div class="card-info">
+                <p>
+                    <label>
+                        Expiry date
+                    </label>
+                    <input placeholder="mm/yy" type="text">
+                </p>
+                <p>
+                    <label>
+                        Security code
+                    </label>
+                    <input placeholder="979" type="password">
+                </p>
+            </div>
+
+            <p>
+                <label class="custom-option-label">
+                    <input class="o-hide-accessible" type="checkbox">
+                    <span class="custom-option custom-option--checkbox">
+                        <svg class="custom-option__symbol" xmlns="http://www.w3.org/2000/svg" width="9" height="6.75" viewBox="0 0 9 6.75">
+                            <path id="check2" d="M4.75,9.5a1,1,0,0,1-.707-.293l-2.25-2.25A1,1,0,1,1,3.207,5.543L4.75,7.086,8.793,3.043a1,1,0,0,1,1.414,1.414l-4.75,4.75A1,1,0,0,1,4.75,9.5" transform="translate(-1.5 -2.75)" fill="#0085ff" fill-rule="evenodd" />
+                        </svg>
+                    </span>
+                    Save payments details for future use
+                </label>
+            </p>
+
+            <h3>
+                Billing info
+            </h3>
+            <div class="address">
+                <p>
+                    <strong class="address__name">Martijn Loth</strong> <br>
+                    Oude Ieperstraat 204 <br>
+                    8940 Wervik <br>
+                </p>
+                <a class="address__edit" href="#!">Edit</a>
+            </div>
+
+            <p>
+                <button type="submit">Save and continue</button>
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>
